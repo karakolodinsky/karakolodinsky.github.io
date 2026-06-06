@@ -40,7 +40,7 @@ export default function DialogueBox(): JSX.Element {
   }, [advance]);
 
   return (
-    <div id="textarea">
+    <div id="textarea" className="img-responsive">
       <div className="nameandsprite">
         <img
           src="../src/assets/me.gif"
@@ -49,9 +49,9 @@ export default function DialogueBox(): JSX.Element {
         />
       
 
-      <div className="textbox">
+      <div className="textbox" onClick={advance}>
         <div className="text">
-          <div className="spaceforCurrent">
+          <div className="spaceforCurrent" onClick={advance}>
             <p className="name">kara</p>
             <p
               key={animKey}
@@ -61,10 +61,13 @@ export default function DialogueBox(): JSX.Element {
             >
               {currentText}
             </p>
+            
           </div>
+          
         </div>
-        <p>click or press space to advance dialogue</p>
-      </div>
+        
+      </div> <br></br>
+      <p className="centered">click dialogue box or press space to advance text</p>
     </div></div>
   );
 }

@@ -4,12 +4,22 @@
 }
 
 .name {
-  font-size: 3vw;
+  font-size: 3rem;
   font-weight: bold;
   vertical-align: bottom;
   align-self: flex-end;
   padding: 0;
   margin: 0;
+}
+
+.centered{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+
 }
 
 #textarea {
@@ -18,9 +28,14 @@
   justify-content: center;
   margin: auto;
   align-items: center;
+  overflow: hidden;
   
 }
 
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
 .nameandsprite {
   flex-direction: column;
   display: flex;
@@ -35,16 +50,20 @@ img {
 }
 
 .textbox {
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   background-color: white;
-  width: 30vw;
-  height: 10vh;
+  border-radius: 10px;
+  aspect-ratio: 4/1;
   padding: 2vw;
-  border-radius: 5px;
+  
   float: left;
   cursor:pointer;
 }
 
+
+.nav{
+  float: right;
+}
 
 .icons{
   justify-content: center;
@@ -81,3 +100,41 @@ img {
   display: flex;
 }
 
+
+
+@media only screen and (max-width: 1150px) {
+
+
+.textbox {
+  font-size: 1.15rem;
+  background-color: white;
+  border-radius: 10px;
+  aspect-ratio: 6/1;
+  padding: 2vw;
+  
+  float: left;
+  cursor:pointer;
+}
+
+.nameandsprite {
+  flex-direction: column;
+  display: flex;
+  width: 90vw;
+  justify-content: center;
+  margin: auto;
+}
+
+
+.name {
+  font-size: 2rem;
+  font-weight: bold;
+  vertical-align: bottom;
+  align-self: flex-end;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+}
