@@ -43,7 +43,7 @@ export default function DialogueBox(): JSX.Element {
     <div id="textarea" className="img-responsive">
       <div className="nameandsprite">
         <img
-          src="../src/assets/me.gif"
+          src="/me.gif"
           id="sprite1"
           alt="me sprite"
         />

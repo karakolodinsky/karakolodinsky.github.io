@@ -1,12 +1,12 @@
 
 @font-face {
     font-family: pc98bold;
-    src: url(../public/pc-9800-bold.ttf);
+    src: url(/pc-9800-bold.ttf);
 }
 
 @font-face {
     font-family: hibiya;
-    src: url(../public/KH-Dot-Hibiya-32.ttf);
+    src: url(/KH-Dot-Hibiya-32.ttf);
 }
 
 links{
@@ -18,7 +18,7 @@ links{
       --bg-tile-height: 64px;
       --bg-tile-width: 64px;
         height: 100vh;
-        background-image: url("../public/pengin2_gray_small.png");
+        background-image: url("/pengin2_gray_small.png");
         animation: backgroundScroll 10s linear infinite;  
      animation-fill-mode: forwards;     
      font-family: 'hibiya';   
@@ -30,6 +30,10 @@ links{
             padding: 0;
       }
 
+    .construction{
+      max-width:200px;
+      margin: auto;
+    }
 @keyframes backgroundScroll{
 
       0%{
@@ -140,7 +144,7 @@ main{
 }
 
 .aboutImage{
-  width: 40vw;
+  width: 60vw;
 
 }
 .aboutSpacing{
@@ -166,7 +170,7 @@ main{
   left: 51%;
   right: 51%;
   bottom: 0;
-  background: rgba(255, 0, 0, 0.5);
+  background:#af0909;
   height: 4px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
