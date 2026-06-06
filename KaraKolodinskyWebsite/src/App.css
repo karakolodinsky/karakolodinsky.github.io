@@ -1,0 +1,168 @@
+
+@font-face {
+    font-family: pc98bold;
+    src: url(../public/pc-9800-bold.ttf);
+}
+
+@font-face {
+    font-family: hibiya;
+    src: url(../public/KH-Dot-Hibiya-32.ttf);
+}
+
+ html {
+      --bg-tile-height: 64px;
+      --bg-tile-width: 64px;
+        height: 100vh;
+        background-image: url("../public/pengin2_gray_small.png");
+        animation: backgroundScroll 10s linear infinite;  
+     animation-fill-mode: forwards;     
+     font-family: 'hibiya';   
+     scroll-behavior: smooth;
+      }
+
+      body{
+            margin:0;
+            padding: 0;
+      }
+
+@keyframes backgroundScroll{
+
+      0%{
+        background-position:  0%  var(--bg-tile-width);
+      }
+      100%{
+background-position:  var(--bg-tile-height) 0%
+      }
+ 
+    }
+
+h1{
+  font-size: 5rem;
+  border-bottom: #1a0505 5px solid;
+}
+
+h1,h2:hover{
+  font-style: italic;
+}
+  header{
+    font-weight: bold;
+    font-size: 3rem;
+    width: 100vw;
+    height: 10vh;
+      position: sticky;
+      top:0;
+       background-image: linear-gradient(to bottom,
+            rgba(255, 0, 0, 0.5),
+            rgba(255, 0, 0, 0.5),
+            rgba(0, 255, 0, 0));
+
+  }
+
+  .nav{
+    font-size: 2rem;
+    
+    font-weight: normal;
+    padding: 5px;
+    margin-right: 1vw;
+  }
+ p{
+  margin:0
+ }
+
+ .mainsection{
+  padding-bottom:0;
+  min-height:75vh;
+  align-items: center;
+ }
+
+  a{
+    text-decoration: none;
+    color: #af0909;
+    padding: 2px;
+  }
+
+  a:hover{
+    font-style: oblique;
+  }
+
+  a:active{
+    color:#1a0505
+  }
+
+  
+/* Ripple Out */
+/* https://ianlunn.github.io/Hover/ */
+
+@-webkit-keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+@keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+
+section{
+  min-height: 90vh;
+  width: 100vw;
+  padding: 5vh;
+}
+
+
+main{
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.aboutImage{
+  min-width: 50vw;
+
+}
+.aboutSpacing{
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Underline From Center */
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: rgba(255, 0, 0, 0.5);
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}

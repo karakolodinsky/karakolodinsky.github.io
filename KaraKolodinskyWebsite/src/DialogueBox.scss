@@ -1,0 +1,83 @@
+
+.spaceforCurrent {
+  width: 80vw;
+}
+
+.name {
+  font-size: 3vw;
+  font-weight: bold;
+  vertical-align: bottom;
+  align-self: flex-end;
+  padding: 0;
+  margin: 0;
+}
+
+#textarea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  
+}
+
+.nameandsprite {
+  flex-direction: column;
+  display: flex;
+  width: 50vw;
+  justify-content: center;
+  margin: auto;
+}
+
+img {
+  display: block;
+  max-width: 300px;
+}
+
+.textbox {
+  font-size: 1.5vw;
+  background-color: white;
+  width: 30vw;
+  height: 10vh;
+  padding: 2vw;
+  border-radius: 5px;
+  float: left;
+  cursor:pointer;
+}
+
+
+.icons{
+  justify-content: center;
+  display: flex;
+}
+.links{
+  width: 1.8rem;
+}
+.advance {
+  animation: blink 2s ease-in-out infinite;
+}
+
+.scroll {
+  position: relative;
+  animation: type 2s steps(60, end);
+  white-space: nowrap;
+  overflow: hidden;
+  width: 90vw;
+  height: 10vh;
+  margin-top: 0;
+}
+
+@keyframes type {
+  from { width: 0; }
+}
+
+@keyframes blink {
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.text {
+  display: flex;
+}
+
