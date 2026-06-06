@@ -4,7 +4,7 @@ import "./DialogueBox.scss";
 const script: string[] = [
   'hello!',
   'welcome to my page!',
-  'thank you for visiting my site!',
+  'thank you for visiting!',
   '...',
   '.....',
   '...............',
@@ -20,7 +20,6 @@ export default function DialogueBox(): JSX.Element {
   const [index, setIndex] = useState<number>(0);
   const [animKey, setAnimKey] = useState<number>(0);
 
-  const isLast: boolean = index === script.length - 1;
   const isDone: boolean = index >= script.length;
   const currentText: string = isDone ? script[script.length - 1] : script[index];
 

@@ -42,8 +42,9 @@ h1{
 }
 
 h1,h2:hover{
-  font-style: italic;
+  font-style: oblique;
 }
+
   header{
     font-weight: bold;
     font-size: 3rem;
@@ -52,10 +53,13 @@ h1,h2:hover{
       position: sticky;
       top:0;
        background-image: linear-gradient(to bottom,
-            rgba(255, 0, 0, 0.5),
-            rgba(255, 0, 0, 0.5),
+            rgba(26, 5, 5, 0.8),
             rgba(0, 255, 0, 0));
 
+  }
+
+  footer{
+    text-align: center;
   }
 
   .nav{

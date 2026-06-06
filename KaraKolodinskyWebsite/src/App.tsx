@@ -44,7 +44,7 @@ function App() {
       <section id='projects'>
          <h1>#projects</h1>
       </section>
-
+      <footer> made in 2026 by kara kolodinsky </footer>
       </main>
     </>
   )
