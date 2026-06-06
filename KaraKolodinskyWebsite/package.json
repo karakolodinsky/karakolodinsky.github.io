@@ -4,7 +4,6 @@
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://karakolodinsky.github.io/",
-
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -12,7 +11,6 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
-    
   },
   "dependencies": {
     "react": "^19.2.6",

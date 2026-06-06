@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback, type JSX } from "react";
-import "./DialogueBox.scss";
+import "./DialogueBox.css";
 
 const script: string[] = [
   'hello!',
