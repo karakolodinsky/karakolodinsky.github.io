@@ -248,6 +248,14 @@ section{
 .aboutImage{
   min-width: 50vh;
 }
+
+.aboutText{
+  width: 70vw;
+  padding: normal;
+}
+.email{
+  font-size: 1.2rem;
+}
 }
 
 

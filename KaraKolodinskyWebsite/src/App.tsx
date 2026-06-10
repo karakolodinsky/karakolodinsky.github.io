@@ -60,7 +60,7 @@ function App() {
                 and recent graduate of <h2>rochester institute of technology</h2>
                 with prior web development internship experience at
                 <h2>m&t bank & carrier.</h2>
-                please direct all emails to <h2>karakolodinsky@gmail.com</h2> <br />
+                please direct all emails to <h2 className='email'>karakolodinsky@gmail.com</h2> <br />
                 <a href="/Resume_Kara_Kolodinsky.pdf" target='_blank' className='hvr-underline-from-center resume'>click to view resume </a> <br /><br />
                 <div className="icons">
                   <a href="https://www.linkedin.com/in/kara-kolodinsky/" target="_blank" aria-label="LinkedIn Profile" rel="noreferrer" data-aos="fade-right" data-aos-duration="500" data-aos-delay="0" data-aos-anchor="#about">
